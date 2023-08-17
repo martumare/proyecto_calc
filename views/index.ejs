@@ -2,35 +2,40 @@
 <html>
   <head>
     <title>Calculadora Clarin</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
     <meta name="viewport" content="width=320"/>
   </head>
   <body>
 
-    <div class="bloque">
+      <details class="calc-cpm">
+        <summary>CÁLCULO POR CPM</summary>
 
-      <details>
-        <summary>CALCULO POR CPM</summary>
-        
-        <input type="number" placeholder="Ingresa cantidad de impresiones" required>
-        <div>
-          
+        <input type="number" placeholder="Ingresar cantidad de impresiones" required>
+
+        <form>
+        <div class="item">CM TARIFARIO</div>
+        <div class="item">CPM PISO</div>
+        <div class="item">CPM LIBRE</div>
+        <div class="item">PORCENTAJE (diferencia CPM Tarifario)</div>
+       
+
+        <div class="reset-calc">
+          <button type="reset" class="reset">RESET</button>
+          <button class="calculo"  type="button" onclick="calcular()">CALCULAR</button>
         </div>
-        <button class="calculo"  type="button" onclick="calcular()">CALCULAR</button>
+        
+        </form>
+        
 
       </details>
 
-      <details>
-        <summary>CALCULO POR PORCENTAJE</summary>
+      <details class="calc-porcentaje">
+        <summary>CÁLCULO POR PORCENTAJE</summary>
       </details>
 
-      <details>
-        <summary>CALCULO POR INVERSION</summary>
+      <details class="calc-inversion">
+        <summary>CÁLCULO POR INVERSIÓN</summary>
       </details>
-
-    </div>
 
   </body>
 </html>
