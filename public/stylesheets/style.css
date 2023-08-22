@@ -1,4 +1,4 @@
-/* Estilos generales de la página */
+/* General */
 * {
   margin: 0;
   padding: 0;
@@ -19,12 +19,11 @@ body {
 }
 
 details {
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 8px;
   width: 300px;
-  margin: 8px;
+  margin: 7px;
   background-color: #202b30;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 summary {
@@ -35,23 +34,42 @@ summary {
   cursor: pointer;
   display: flex;
   align-items: flex-start;
-  padding: 10px;
+  padding: 5px;
 }
 
-.reset {
-  color: #a5aaac !important;
-  padding: 10px;
-  position: relative;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 13px;
-  background-color: transparent;
-  border: none;
-  opacity: 0.5;
+.bloque-calculos {
+  font-size: 12px;
+  font-weight:500;
 }
 
-.reset-calc {
+.item {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  color: #fff;
+  padding: 5px;
+  border-bottom: 1px solid #314149;
+}
+
+#icono {
+  padding-right: 8px;
+  color: #26cdc3;
+}
+
+#valor {
+  color: #26cdc3; 
+}
+
+#valor-input {
+  color: #26cdc3;
+  background-color: transparent;
+  border: 0;
+  width: 10%;
+  font-weight:500;
+}
+
+.resultados {
+  color: #a5aaac;
 }
 
 /* Campos de entrada de texto */
@@ -67,36 +85,7 @@ input[type="number"] {
   font-size: 12px;
 }
 
-/* Botón de envío + efecto */
-.calculo {
-  color: #fff !important;
-  width: 40%;
-  padding: 10px;
-  background: #26cdc3;
-  border: none;
-  border-radius: 10px;
-  position: relative;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 13px;
-  font-weight: bolder;
-}
-
-.calculo:before {
-  content:"";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 0px;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  transition: all 1s ease;
-  border-radius: 10px;
-}
-
-.calculo:hover:before {
-width: 100%;
-}
-
+/*
 form {
   font-size: 12px;
   color: #fff;
@@ -106,7 +95,43 @@ form {
   text-align: start;
   padding: 5px;
 }
+*/
 
-.item {
-  padding: 5px;
+/* Botones */
+.botones-calc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 7px;
+}
+
+.calcular {
+  color: #fff !important;
+  width: 45%;
+  background: #26cdc3;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2px;
+}
+
+.reset {
+  color: #a5aaac !important;
+  padding: 10px;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  background-color: transparent;
+  font-weight: lighter;
+  border: none;
+  opacity: 0.5;
+}
+
+.reset i {
+  padding: 2px;
 }

@@ -1,41 +1,63 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <title>Calculadora Clarin</title>
+    <title>Calculadora de Inventario - Clarin</title>
     <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <script src="https://kit.fontawesome.com/8b42bf86c5.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=320"/>
   </head>
+
   <body>
+      <details>
+    
+          <summary><i class="fas fa-hand-holding-usd" id="icono"></i>CÁLCULO POR CPM</i></summary>
 
-      <details class="calc-cpm">
-        <summary>CÁLCULO POR CPM</summary>
+          <div class="bloque-calculos">
+              <div><input type="number" name="impresiones" placeholder="Ingresar cantidad de impresiones"></div>
+              <div class="item">
+                  <div>CPM TARIFARIO <span id="valor">$80</span></div>
+                  <div class="resultados"> 00.00 <span>$</span></div>
+              </div>
 
-        <input type="number" placeholder="Ingresar cantidad de impresiones" required>
 
-        <form>
-        <div class="item">CM TARIFARIO</div>
-        <div class="item">CPM PISO</div>
-        <div class="item">CPM LIBRE</div>
-        <div class="item">PORCENTAJE (diferencia CPM Tarifario)</div>
-       
+              <div class="item">
+                  <div>CPM PISO <span id="valor">$25</span></div>
+                  <div class="resultados"> 00.00 <span>$</span></div>
+              </div>
+              <div class="item">
+                  <div>CPM LIBRE 
+                      <div>
+                          <i class="fas fa-minus-circle menos-cpm-libre"></i>
+                          <span><input id="valor-input" idname="cpm-libre" value="45"></span>
+                          <i class="fas fa-plus-circle mas-cpm-libre"></i>
+                      </div>
+                  </div>
+                  <div class="resultados"> 00.00 <span>$</span></div>
+              </div>
+              <div class="item">
+                  <div>PORCENTAJE (dif. CPM Tarifario)</div>
+                  <div class="resultados"> 00.00 <span>%</span></div>
+              </div>
 
-        <div class="reset-calc">
-          <button type="reset" class="reset">RESET</button>
-          <button class="calculo"  type="button" onclick="calcular()">CALCULAR</button>
-        </div>
-        
-        </form>
-        
+              <div class="botones-calc">
+                  <div class="reset"><i class="fas fa-redo-alt"></i> RESET</div>
+                  <div class="calcular">CALCULAR</div>
+              </div>
+
+          </div>
 
       </details>
 
       <details class="calc-porcentaje">
-        <summary>CÁLCULO POR PORCENTAJE</summary>
+        <summary><i class="fa-solid fa-percent" id="icono"></i>CÁLCULO POR PORCENTAJE</summary>
+        <div>PRUEBA DE CONTENIDO</div>
       </details>
 
       <details class="calc-inversion">
-        <summary>CÁLCULO POR INVERSIÓN</summary>
+        <summary><i class="fa-solid fa-dollar-sign" id="icono"></i>CÁLCULO POR INVERSIÓN</summary>
+        <div>PRUEBA DE CONTENIDO</div>
       </details>
-
+      
   </body>
 </html>
