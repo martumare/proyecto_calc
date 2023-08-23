@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-/* Cuerpo de la página */
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #314149;
@@ -37,6 +36,19 @@ summary {
   padding: 5px;
 }
 
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 35px;
+  font-size: 12px;
+}
+
+/* Clases */
 .bloque-calculos {
   font-size: 12px;
   font-weight:500;
@@ -51,6 +63,47 @@ summary {
   border-bottom: 1px solid #314149;
 }
 
+.cpm-libre {
+  width: 50%;
+}
+
+.resultados {
+  color: #a5aaac;
+}
+
+.botones-calc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 7px;
+  align-items: center;
+}
+
+div .calcular {
+  color: #fff;
+  width: 40%;
+  background: #26cdc3;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: bolder;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset {
+  color: #a5aaac;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  background-color: transparent;
+  border: none;
+  opacity: 0.5;
+}
+
+/* IDs */
 #icono {
   padding-right: 8px;
   color: #26cdc3;
@@ -68,70 +121,14 @@ summary {
   font-weight:500;
 }
 
-.resultados {
-  color: #a5aaac;
-}
-
-/* Campos de entrada de texto */
-input[type="number"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  height: 35px;
-  font-size: 12px;
-}
-
-/*
-form {
-  font-size: 12px;
-  color: #fff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: flex;
-  flex-direction: column;
-  text-align: start;
+#icono-reset {
   padding: 5px;
-}
-*/
-
-/* Botones */
-.botones-calc {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 7px;
+  margin: 2px;
+  color: #a5aaac;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.calcular {
-  color: #fff !important;
-  width: 45%;
-  background: #26cdc3;
-  border: none;
-  border-radius: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 13px;
-  font-weight: bolder;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 2px;
-}
-
-.reset {
-  color: #a5aaac !important;
-  padding: 10px;
-  position: relative;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 13px;
-  background-color: transparent;
-  font-weight: lighter;
-  border: none;
-  opacity: 0.5;
-}
-
-.reset i {
-  padding: 2px;
+#icono-reset:hover {
+  transform: scale(1.2);
+  color: #26cdc3;
 }
