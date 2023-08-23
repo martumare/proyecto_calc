@@ -57,7 +57,7 @@
         <div class="botones-calc">
           <div id="reset">
             <i id="icono-reset" class="fas fa-redo-alt"></i>
-            <button class="reset" id="botonReset" type="reset"> RESET</button>
+            <button class="reset" id="botonReset" type="reset">RESET</button>
           </div>
           <div class="calcular" id="calcular">CALCULAR</div>
         </div>
@@ -68,17 +68,65 @@
       <summary>
         <i class="fa-solid fa-percent" id="icono"></i>CÁLCULO POR PORCENTAJE
       </summary>
-      <div>PRUEBA DE CONTENIDO</div>
+      <div>
+        <input
+          type="number"
+          id="impresiones"
+          name="impresiones"
+          placeholder="Ingresar impresiones"
+        />
+        Descuento
+        <i class="fas fa-minus-circle"></i>
+        <span><input id="valor-input" value="15" /></span>
+        <i class="fas fa-plus-circle"></i>
+        %
+      </div>
+      <div>
+        <div>Resultado con descuento</div>
+        <div>CPM con descuento</div>
+      </div>
+
+      <div class="botones-calc">
+        <div id="reset">
+          <i id="icono-reset" class="fas fa-redo-alt"></i>
+          <button class="reset" id="botonReset" type="reset">RESET</button>
+        </div>
+        <div class="calcular" id="calcular">CALCULAR</div>
+      </div>
     </details>
 
     <details class="calc-inversion">
       <summary>
         <i class="fa-solid fa-dollar-sign" id="icono"></i>CÁLCULO POR INVERSIÓN
       </summary>
-      <div>PRUEBA DE CONTENIDO</div>
+      <div>
+        <input
+          type="number"
+          id="impresiones"
+          name="impresiones"
+          placeholder="Ingresar impresiones"
+        />
+      </div>
+      <div>
+        CPM
+        <i class="fas fa-minus-circle"></i>
+        <span><input id="valor-input" value="15" /></span>
+        <i class="fas fa-plus-circle"></i>
+      </div>
+
+      <div>
+        <div>Impresiones por presupuesto</div>
+      </div>
+
+      <div class="botones-calc">
+        <div id="reset">
+          <i id="icono-reset" class="fas fa-redo-alt"></i>
+          <button class="reset" id="botonReset" type="reset">RESET</button>
+        </div>
+        <div class="calcular" id="calcular">CALCULAR</div>
+      </div>
     </details>
 
     <script src="script.js"></script>
-
   </body>
 </html>
