@@ -18,7 +18,7 @@
         <i class="fas fa-hand-holding-usd" id="icono"></i>CÁLCULO POR CPM
       </summary>
 
-      <div class="bloque-calculos">
+      <div class="bloque-calculos" id="bloque-calculos">
         <div>
           <input
             type="number"
@@ -40,24 +40,24 @@
         <div class="item">
           <div class="cpm-libre">
             CPM LIBRE
-            <i class="fas fa-minus-circle menos-cpm-libre"></i>
+            <button id="botonDecrementar"><i class="fas fa-minus-circle menos-cpm-libre"></i></button>
             <span
-              ><input id="valor-input" idname="cpm-libre" value="45"
+              ><input id="valorinput" idname="cpm-libre" value="45"
             /></span>
-            <i class="fas fa-plus-circle mas-cpm-libre"></i>
+            <button id="botonIncrementar"><i class="fas fa-plus-circle mas-cpm-libre"></i></button>
           </div>
-          <div class="resultados">00.00 <span>$</span></div>
+          <div class="resultados"><span id="cpmLibre"></span> $</div>
         </div>
 
         <div class="item">
           <div>PORCENTAJE (dif. CPM Tarifario)</div>
-          <div class="resultados">00.00 <span>%</span></div>
+          <div class="resultados"><span id="difPorcentaje"></span> %</div>
         </div>
 
         <div class="botones-calc">
           <div id="reset">
             <i id="icono-reset" class="fas fa-redo-alt"></i>
-            <button class="reset" id="botonReset" type="reset">RESET</button>
+            <button class="reset" id="reset" type="reset">RESET</button>
           </div>
           <div class="calcular" id="calcular">CALCULAR</div>
         </div>
@@ -89,9 +89,9 @@
       <div class="botones-calc">
         <div id="reset">
           <i id="icono-reset" class="fas fa-redo-alt"></i>
-          <button class="reset" id="botonReset" type="reset">RESET</button>
+          <button class="reset" type="reset">RESET</button>
         </div>
-        <div class="calcular" id="calcular">CALCULAR</div>
+        <div class="calcular">CALCULAR</div>
       </div>
     </details>
 
@@ -121,9 +121,9 @@
       <div class="botones-calc">
         <div id="reset">
           <i id="icono-reset" class="fas fa-redo-alt"></i>
-          <button class="reset" id="botonReset" type="reset">RESET</button>
+          <button class="reset" type="reset">RESET</button>
         </div>
-        <div class="calcular" id="calcular">CALCULAR</div>
+        <div class="calcular">CALCULAR</div>
       </div>
     </details>
 

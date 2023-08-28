@@ -104,6 +104,14 @@ div .calcular {
 }
 
 /* IDs */
+#botonIncrementar, #botonDecrementar {
+  background-color: transparent;
+  font-size: 8px;
+  border: none;
+  color: #fff;
+  font-size: 11px;
+}
+
 #icono {
   padding-right: 8px;
   color: #26cdc3;
@@ -113,7 +121,7 @@ div .calcular {
   color: #26cdc3; 
 }
 
-#valor-input {
+#valorinput {
   color: #26cdc3;
   background-color: transparent;
   border: 0;
